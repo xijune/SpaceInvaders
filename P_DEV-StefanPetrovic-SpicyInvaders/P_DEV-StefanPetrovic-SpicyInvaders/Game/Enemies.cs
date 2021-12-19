@@ -1,78 +1,68 @@
-﻿using System;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : All enemies do the same so this class manages all of them
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// All enemies do the same so this class manages all of them
-    /// </summary>
     class Enemies : GameObject
     {
+        #region Attributs
         // Constants related to what's done in this script
-        private const int _ANIMATION_INIT_SPEED = 12;
-        private const int _NUMBER_OF_COLUMNS = 7;
-        private const int _BULLET_MOVE_SPEED = 2;
-        private const int _MOVE_DOWN_STEPS = 30;
-        private const int _INIT_NUM_BULLETS = 3;
-        private const int _MAX_NUM_BULLETS = 10;
-        private const int _BOTTOM_BOUDARY = 54;
-        private const int _RIGHT_BOUNDARY = 90;
-        private const int _LOWER_BOUNDARY = 58;
-        private const int _MOVE_DOWN_SPEED = 5;
-        private const int _MOVE_INIT_SPEED = 7;
-        private const int _MOVE_UP_STEPS = 15;
-        private const int _MOVE_UP_SPEED = 5;
-        private const int _TOP_START_ROW = 6;
-        private const int _LEFT_BOUNDARY = 3;
-        private const int _Y_MIN = 12;
-
+        const int _ANIMATION_INIT_SPEED = 12;
+        const int _NUMBER_OF_COLUMNS = 7;
+        const int _BULLET_MOVE_SPEED = 2;
+        const int _MOVE_DOWN_STEPS = 30;
+        const int _INIT_NUM_BULLETS = 3;
+        const int _MAX_NUM_BULLETS = 10;
+        const int _BOTTOM_BOUDARY = 54;
+        const int _RIGHT_BOUNDARY = 90;
+        const int _LOWER_BOUNDARY = 58;
+        const int _MOVE_DOWN_SPEED = 5;
+        const int _MOVE_INIT_SPEED = 7;
+        const int _MOVE_UP_STEPS = 15;
+        const int _MOVE_UP_SPEED = 5;
+        const int _TOP_START_ROW = 6;
+        const int _LEFT_BOUNDARY = 3;
+        const int _Y_MIN = 12;
         // The current movement direction of all enemies
         private MoveType _currentMove;
-
-        // A list with all the enemies
-        public List<Enemy> EnemyList { get; private set; }
-
         // A timer for the animation
         private Timer _animationTimer;
-
         // A timer for moving down
         private Timer _moveDownTimer;
-
         // A timer for the movement
         private Timer _moveTimer;
-
         // A timer for the movement up steps
         private Timer _moveUpSteps;
-
         // A timer for the movement up speed
         private Timer _moveUpSpeed;
-
-        // Instance of Bullets
-        public Bullets EnemyBullets { get; private set; }
-
         // Instantiate a new Random
-        Random rnd = new Random();
-
+        private Random rnd = new Random();
         // The step ammount to move the enemy down
         private int _moveDownSteps;
-
         private int _numOfBullets;
-
         // If the enemy is on the first sprite
         private bool _firstSprite;
-
         // If the enemy is to go down
         private bool _increaseY;
-
         // If the enemy will move this frame
         private bool _moveEnemy;
-
         // Check if the ship died
         public bool shipDestroyed;
+        #endregion
 
+        #region Propriétés des attributs
+        // A list with all the enemies
+        public List<Enemy> EnemyList { get; private set; }
+        // Instance of Bullets
+        public Bullets EnemyBullets { get; private set; }
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// The enemies constructor 
         /// </summary>
@@ -81,10 +71,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         {
             // Set the max number of bullets for the enemies
             _numOfBullets = _INIT_NUM_BULLETS;
-
             // Increase the number of bullets every 4 levels up to a maximum of 10 bullets
             Timer bulletCounter = new Timer(4);
-
             // Loop the level amount of times
             for (int i = 0; i < level; i++)
             {
@@ -95,40 +83,31 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                     _numOfBullets += 2;
                 }
             }
-
             // Initialize the list
             EnemyList = new List<Enemy>();
-
             // Instantiate a new timer for the animation speed
             _animationTimer = new Timer(_ANIMATION_INIT_SPEED);
-
             // Instantiate a new timer for the movement speed
             _moveTimer = new Timer(_MOVE_INIT_SPEED);
-
             // Instantiate a new timer for the move down speed
             _moveDownTimer = new Timer(_MOVE_DOWN_SPEED);
-
             // Instantiate a new timer for the move up steps
             _moveUpSteps = new Timer(_MOVE_UP_STEPS);
-
             // Instantiate a new timer for the move up speed
             _moveUpSpeed = new Timer(_MOVE_UP_SPEED);
-
             // Instatiate the ship bullets
             EnemyBullets = new Bullets(_LOWER_BOUNDARY, _numOfBullets, _BULLET_MOVE_SPEED);
-
             // When the game starts the enemie is on the first sprite
             _firstSprite = true;
-
             // Set the starting movement direction for the enemies
             _currentMove = MoveType.RIGHT;
-
             // At the start the y wont increasse
             _increaseY = false;
-
             AddEnemies(level);
         }
+        #endregion
 
+        #region Methodes
         public override void Update()
         {
             // If the animation timer has finished counting
@@ -541,5 +520,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Return `reVal`
             return retVal;
         }
+        #endregion
     }
 }

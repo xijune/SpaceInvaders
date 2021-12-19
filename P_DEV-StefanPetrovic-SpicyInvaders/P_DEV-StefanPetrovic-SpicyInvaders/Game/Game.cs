@@ -1,4 +1,9 @@
-﻿using System;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Class of the main game
+
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -6,53 +11,47 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class Game
     {
+        #region Attributs
         // Constant that holds the frame time
         private const int _FAME_TIME = 40;
         private const int _BASE_DELAY = 25;
         private const int _START_LIFES = 1;
-
         // The current score
         private int _score;
-
         // The current number of lifes
         private int _lifes;
-
         // The current level
         private int _level;
-
         // The current difficulty
         private int _isHard;
-
         // Bool knows if the game is over
         private bool _gameOver;
-
+        // Username of the player
+        private string _userName;
         // Collection with all the game objects
         List<GameObject> objectsCollection;
-
         // Create a list of bullets to delete
         List<Bullet> bulletsToDelete;
-
         // Create a new list of bullets
         List<Bullet> bullets;
-
         // Create a new Timer
         Timer counter;
-
         // Create a new blinkCounter
         Timer blinkCounter;
-
         // Instance of the ship
         Ship ship;
-
         // Instance of the enemies
         Enemies enemies;
-
         // Instance of the barriers
         Barriers barriers;
-
         // Instace of the explosions
         Explosions explosions;
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// Constructor for the Game class
         /// </summary>
@@ -85,7 +84,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Game over is false when the game starts
             _gameOver = false;
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Game Loop Class
         /// </summary>
@@ -173,6 +174,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
 
             GameOver();
 
+            UserName();
+
             // Clears the buffer
             Buffer.ClearBuffer();
         }
@@ -222,6 +225,18 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 // Wait for 20 miliseconds
                 Thread.Sleep(20);
             }
+        }
+
+        private void UserName()
+        {
+            Buffer.WriteWithColor(0, 22, " ", ConsoleColor.Blue);
+            Buffer.WriteWithColor(0, 24, " ", ConsoleColor.Blue);
+            Buffer.Delete(36, 22, "P L A Y E R   U S E R N A M E :");
+
+            // Display the frame
+            Buffer.DisplayRender();
+            Console.SetCursorPosition(38, 24);
+            _userName = Console.ReadLine();
         }
 
         /// <summary>
@@ -620,5 +635,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         {
             _isHard = 12;
         }
+        #endregion
     }
 }

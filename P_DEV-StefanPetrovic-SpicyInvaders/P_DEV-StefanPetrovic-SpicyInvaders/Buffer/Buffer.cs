@@ -1,19 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Class for the buffer
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class Buffer
     {
+        #region Attributs
         // Instantiate a new double buffer
         private static DoubleBuffer buffer2D = new DoubleBuffer(100, 59);
-
         // Instantiate a new default pixel
         private static Pixel currentPixel = new Pixel();
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
         /// <summary>
         /// Writes to the console
         /// </summary>
@@ -100,5 +109,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Clear the buffer
             buffer2D.Clear();
         }
+        #endregion
     }
 }

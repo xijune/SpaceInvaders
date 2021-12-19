@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Create the ship that player control
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {

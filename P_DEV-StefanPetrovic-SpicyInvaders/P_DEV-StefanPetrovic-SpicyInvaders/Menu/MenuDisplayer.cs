@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Display Text to menus
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
@@ -149,6 +150,16 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void ClearOnEasy(int i)
         {
             Buffer.Write(X_SELECTION, Y_SELECTION + 2 + i, "                      ");
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="a"></param>
+        public static void AboutInfos(int i, ConsoleColor a)
+        {
+            Buffer.WriteWithColor(0, Y_SELECTION + i, " ", a);
+            Buffer.Write(15, Y_SELECTION + i, Sprites.aboutinfo[i]);
         }
         #endregion
     }

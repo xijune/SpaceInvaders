@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : This class is used to store sprites
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class Sprites
     {
+        #region Attributs
         // Design of the space invaders title
         public static readonly string[] titleStartString = new string[4]
         {
@@ -24,14 +24,22 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "█─██─██─▄▄▄███─████─██─██─██─█▄▀─██",
             "▀▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀▄▄▄▀▄▄▄▄▀▄▄▄▀▀▄▄▀"
         };
+        // Design of the about title
+        public static readonly string[] titleAboutString = new string[4]
+        {
+            "███████████████████████████████",
+            "██▀▄─██▄─▄─▀█─▄▄─█▄─██─▄█─▄─▄─█",
+            "██─▀─███─▄─▀█─██─██─██─████─███",
+            "▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▀▄▄▄▄▀▀▀▄▄▄▀▀"
+        };
         // Design of the play text
-        public static readonly string[] playString = new string[2] 
+        public static readonly string[] playString = new string[2]
         {
            "█▀█ █   ▄▀▄ █▄█",
            "█▀▀ █▄▄ █▀█  █ "
         };
         // Design of the score text
-        public static readonly string[] scoreString = new string[2] 
+        public static readonly string[] scoreString = new string[2]
         {
            "█▀ █▀▀ █▀█ █▀█ █▀▀",
            "▄█ █▄▄ █▄█ █▀▄ ██▄"
@@ -120,5 +128,33 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             " █▀█▀█ ",
             " ▐▀▀▀▌ "
         };
+        // Infos of the about menu
+        public static readonly string[] aboutinfo = new string[14]
+        {
+            "╔═════════════════════════════════════════════════════════════════╗",
+            "║Nom :        Petrovic                                            ║",
+            "║Prénom :     Stefan                                              ║",
+            "║Classe :     CID2a                                               ║",
+            "║Age :        19 ans                                              ║",
+            "║Formation :  CFC Informatique - 2021 / 2024                      ║",
+            "║Lieu :       ETML - Ecole Technique des Métiers de Lausanne      ║",
+            "║Date :       11.12.2021                                          ║",
+            "╠═════════════════════════════════════════════════════════════════╣",
+            "║Projet :     Le projet consiste à crée un Space Invaders à       ║",
+            "║             partir de rien. Le Space Invaders est un jeu        ║",
+            "║             d'arcade de l'époque, le but ici est de le          ║",
+            "║             recrée en C# en mode console.                       ║",
+            "╚═════════════════════════════════════════════════════════════════╝"
+        };
+        #endregion
+
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
+        #endregion
     }
 }

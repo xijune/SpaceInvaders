@@ -5,3 +5,11 @@ C:\Users\pz21bmv\Desktop\C#\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetro
 C:\Users\pz21bmv\Desktop\C#\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.CoreCompileInputs.cache
 C:\Users\pz21bmv\Desktop\C#\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
 C:\Users\pz21bmv\Desktop\C#\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.AssemblyReference.cache
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.SuggestedBindingRedirects.cache
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.CoreCompileInputs.cache
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe.config
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb

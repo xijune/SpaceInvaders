@@ -1,25 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Enemy Class corresponds to an ingame enemy object
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Enemy Class corresponds to an ingame enemy object
-    /// </summary>
     class Enemy : GameObject
     {
+        #region Attributs
         // Constants related to what's done in this script
         private const int _SPRITE_HEIGTH = 3;
-
         /// <summary>
         /// The coordinate for the ship
         /// </summary>
         private Vector _coordinates;
-        public Vector Coordinates => _coordinates;
+        // The enemy first sprite
+        private string[] _sprite1;
+        // The enemy second sprite
+        private string[] _sprite2;
+        // The enemy current sprite
+        private string[] _currentSprite;
+        // The color of the enemy
+        private ConsoleColor _myColor;
+        #endregion
 
+        #region Propriétés des attributs
+        /// <summary>
+        /// The coordinate for the ship
+        /// </summary>
+        public Vector Coordinates => _coordinates;
         /// <summary>
         /// If the enemy is on the first sprite
         /// </summary>
@@ -39,19 +50,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// If the enemy will move this frame
         /// </summary>
         public bool CanMove { get; set; }
+        #endregion
 
-        // The enemy first sprite
-        private string[] _sprite1;
-
-        // The enemy second sprite
-        private string[] _sprite2;
-
-        // The enemy current sprite
-        private string[] _currentSprite;
-
-        // The color of the enemy
-        private ConsoleColor _myColor;
-
+        #region Constructeurs
         /// <summary>
         /// Constructor for the enemy class
         /// </summary>
@@ -71,7 +72,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             _sprite1 = enemy;
             _sprite2 = enemy;
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// The Update method
         /// </summary>
@@ -173,5 +176,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 }
             }
         }
+        #endregion
     }
 }

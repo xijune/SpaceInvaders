@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : This class manage all the number that will be displayed in game and displays them when necessary
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Manages all the number that will be displayed in game
-    /// And displays them when necessary
-    /// </summary>
     public static class NumberManager
     {
+        #region Attributs
         // Necessary constants to be used in this script
-        private const int NUMBER_ROWS = 3;
-        private const int SCORE_X_POS = 8;
-        private const int LIFES_X_POS = 87;
-        private const int LEVELS_X_POS = 52;
+        const int _NUMBER_ROWS = 3;
+        const int _SCORE_X_POS = 8;
+        const int _LIFES_X_POS = 87;
+        const int _LEVELS_X_POS = 52;
 
         /// <summary>
         /// Sprite for the number 0
         /// </summary>
-        private static string[] zero = new string[] {
+        private static string[] _zero = new string[] {
             "╔╗",
             "║║",
             "╚╝" };
@@ -29,7 +27,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 1
         /// </summary>
-        private static string[] one = new string[] {
+        private static string[] _one = new string[] {
             " ╗",
             " ║",
             " ╩"};
@@ -37,7 +35,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 2
         /// </summary>
-        private static string[] two = new string[] {
+        private static string[] _two = new string[] {
             "╔╗",
             "╔╝",
             "╚╝"};
@@ -45,7 +43,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 3
         /// </summary>
-        private static string[] three = new string[] {
+        private static string[] _three = new string[] {
             "╔╗",
             " ╣",
             "╚╝"};
@@ -53,7 +51,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 4
         /// </summary>
-        private static string[] four = new string[] {
+        private static string[] _four = new string[] {
             "╗╗",
             "╚╣",
             " ╩"};
@@ -61,7 +59,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 5
         /// </summary>
-        private static string[] five = new string[] {
+        private static string[] _five = new string[] {
             "╔╗",
             "╚╗",
             "╚╝"};
@@ -69,7 +67,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 6
         /// </summary>
-        private static string[] six = new string[] {
+        private static string[] _six = new string[] {
             "╔╗",
             "╠╗",
             "╚╝"};
@@ -77,7 +75,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 7
         /// </summary>
-        private static string[] seven = new string[] {
+        private static string[] _seven = new string[] {
             "╔╗",
             " ║",
             " ╩"};
@@ -85,7 +83,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 8
         /// </summary>
-        private static string[] eight = new string[] {
+        private static string[] _eight = new string[] {
             "╔╗",
             "╠╣",
             "╚╝"};
@@ -93,7 +91,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Sprite for the number 9
         /// </summary>
-        private static string[] nine = new string[] {
+        private static string[] _nine = new string[] {
             "╔╗",
             "╚╣",
             " ╩"};
@@ -102,8 +100,16 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// Creates a new string array of arrays to save all the number sprites
         /// </summary>
         private static string[][] digits = new string[][]
-        { zero, one, two, three, four, five, six, seven, eight, nine};
+        { _zero, _one, _two, _three, _four, _five, _six, _seven, _eight, _nine};
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
         /// <summary>
         /// Write the score to the buffer
         /// </summary>
@@ -111,7 +117,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void WriteScore(int score)
         {
             // Write the score to the buffer
-            Write(score, 6, SCORE_X_POS);
+            Write(score, 6, _SCORE_X_POS);
         }
 
         /// <summary>
@@ -120,7 +126,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void DeleteScore()
         {
             // Delete the score from the buffer
-            Delete(6, SCORE_X_POS);
+            Delete(6, _SCORE_X_POS);
         }
 
         /// <summary>
@@ -130,7 +136,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void WriteLifes(int lifes)
         {
             // Write the number of lifes to the buffer
-            Write(lifes, 0, LIFES_X_POS);
+            Write(lifes, 0, _LIFES_X_POS);
         }
 
         /// <summary>
@@ -139,7 +145,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void DeleteLifes()
         {
             // Delete the number of lifes from the buffer
-            Delete(0, LIFES_X_POS);
+            Delete(0, _LIFES_X_POS);
         }
 
         /// <summary>
@@ -149,7 +155,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void WriteLevel(int level)
         {
             // Write the current level the player is in to the buffer
-            Write(level, 2, LEVELS_X_POS);
+            Write(level, 2, _LEVELS_X_POS);
         }
 
         /// <summary>
@@ -158,7 +164,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void DeleteLevel()
         {
             // Delete the number of levels from the buffer
-            Delete(2, LEVELS_X_POS);
+            Delete(2, _LEVELS_X_POS);
         }
 
         /// <summary>
@@ -215,7 +221,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             for (int i = 0; i <= format; i++)
             {
                 // Loops the ammount of rows
-                for (int j = 0; j < NUMBER_ROWS; j++)
+                for (int j = 0; j < _NUMBER_ROWS; j++)
                 {
                     // Deletes the number from the buffer
                     Buffer.Delete(x + xOffset, j + 2, "  ");
@@ -237,7 +243,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         private static void WriteNumber(int value, int xOffset, int x)
         {
             // Loops 3 times...
-            for (int i = 0; i < NUMBER_ROWS; i++)
+            for (int i = 0; i < _NUMBER_ROWS; i++)
             {
                 // Change the color depending on the row
                 Buffer.WriteWithColor(0, i + 2, " ", i == 0 ?
@@ -250,5 +256,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 Buffer.Write(x + xOffset, i + 2, digits[value][i]);
             }
         }
+        #endregion
     }
 }

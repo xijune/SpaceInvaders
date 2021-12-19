@@ -1,31 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Bullet Class corresponds to an ingame bullet object
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Bullet Class corresponds to an ingame bullet object
-    /// </summary>
     class Bullet
     {
+        #region Attributs
         // The bullet prite
         private char _bullet;
-
         // How much to move the bullet
         private int _increment;
-
-        /// <summary>
-        /// The coordinate for the bullet
-        /// </summary>
+        // The coordinate for the bullet
         private Vector _coordinates;
-        public Vector Coordinates => _coordinates;
+        #endregion
 
+        #region Propriétés des attributs
+        // The coordinate for the bullet
+        public Vector Coordinates => _coordinates;
         // Save the move direction of the bullet
         public MoveType moveDirection { get; }
+        #endregion
 
+        #region Constructeurs
         /// <summary>
         /// Constructor for the bullet class
         /// </summary>
@@ -46,7 +46,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Set the bullet sprite
             _bullet = '║';
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Write the bullet to the buffer
         /// </summary>
@@ -90,5 +92,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Write to the buffer
             Write();
         }
+        #endregion
     }
 }

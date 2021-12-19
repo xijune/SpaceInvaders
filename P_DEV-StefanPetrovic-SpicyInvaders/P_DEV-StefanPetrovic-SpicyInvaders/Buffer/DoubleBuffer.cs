@@ -1,63 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Class for the doubleBuffer
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class DoubleBuffer
     {
+        #region Attributs
+        //
         public Pixel[,] current;
-        private Pixel[,] next;
-        private Pixel[,] aux;
+        //
+        private Pixel[,] _next;
+        //
+        private Pixel[,] _aux;
+        //
+        private char[] _charsCurrent;
+        #endregion
 
-        public int XDim => next.GetLength(0);
-        public int YDim => next.GetLength(1);
-
-        char[] charsCurrent;
-
+        #region Propriétés des attributs
+        //
+        public int XDim => _next.GetLength(0);
+        //
+        public int YDim => _next.GetLength(1);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public Pixel this[int x, int y]
         {
             get => current[x, y];
-            set => next[x, y] = value;
+            set => _next[x, y] = value;
         }
+        #endregion
 
+        #region Constructeurs
+        /// <summary>
+        /// Constructor for the doubleBuffer class
+        /// </summary>
+        /// <param name="x">The starting x position</param>
+        /// <param name="y">The starting y position</param>
+        public DoubleBuffer(int x, int y)
+        {
+            current = new Pixel[x, y];
+            _next = new Pixel[x, y];
+
+            _charsCurrent = new char[x];
+
+            Clear();
+        }
+        #endregion
+
+        #region Methodes
         public void Clear()
         {
-            Array.Clear(next, 0, XDim * YDim - 1);
+            Array.Clear(_next, 0, XDim * YDim - 1);
             Array.Clear(current, 0, XDim * YDim - 1);
 
             for (int i = 0; i < YDim; i++)
             {
                 for (int j = 0; j < XDim; j++)
                 {
-                    next[j, i].pixelChar = ' ';
+                    _next[j, i].pixelChar = ' ';
                     current[j, i].pixelChar = ' ';
-                    charsCurrent[i] = ' ';
+                    _charsCurrent[i] = ' ';
                 }
 
-                Console.WriteLine(charsCurrent);
+                Console.WriteLine(_charsCurrent);
             }
         }
-
-        public DoubleBuffer(int x, int y)
-        {
-            current = new Pixel[x, y];
-            next = new Pixel[x, y];
-
-            charsCurrent = new char[x];
-
-            Clear();
-        }
-
         public void Swap()
         {
-            aux = current;
-            current = next;
-            next = aux;
+            _aux = current;
+            current = _next;
+            _next = _aux;
         }
-
         public void Display()
         {
             Console.SetCursorPosition(0, 0);
@@ -74,10 +95,11 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
 
                 for (int x = 0; x < XDim; x++)
                 {
-                    charsCurrent[x] = current[x, y].pixelChar;
+                    _charsCurrent[x] = current[x, y].pixelChar;
                 }
-                Console.WriteLine(charsCurrent);
+                Console.WriteLine(_charsCurrent);
             }
         }
+        #endregion
     }
 }

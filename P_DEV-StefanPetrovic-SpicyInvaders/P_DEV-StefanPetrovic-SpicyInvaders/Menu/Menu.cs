@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Main menu
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
@@ -10,21 +11,23 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
     {
         #region Attributs
         // Constant of the X value to render all button
-        private const int X_SELECTION = 38;
+        const int _X_SELECTION = 38;
         // If the play button is selected
-        private bool playSelected;
+        private bool _playSelected;
         // If the exit button is selected
-        private bool exitSelected;
+        private bool _exitSelected;
         // If the option button is selected
-        private bool optionSelected;
+        private bool _optionSelected;
         // If the about button is selected
-        private bool aboutSelected;
+        private bool _aboutSelected;
         // If the score button is selected
-        private bool scoreSelected;
+        private bool _scoreSelected;
         // Holds a game instance
-        private Game game;
+        private Game _game;
         // Holds a option menu instance
-        private OptionMenu option;
+        private OptionMenu _option;
+        // Holds a about menu instance
+        private AboutMenu _about;
         #endregion
 
         #region Propriétés des attributs
@@ -37,17 +40,19 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public Menu()
         {
             // The play button starts selected
-            playSelected = true;
+            _playSelected = true;
             // The quit button starts unselected
-            exitSelected = false;
+            _exitSelected = false;
             // The option button starts unselected
-            optionSelected = false;
+            _optionSelected = false;
             // The about button starts unselected
-            aboutSelected = false;
+            _aboutSelected = false;
             // The score button starts unselected
-            scoreSelected = false;
-            // Instantiate a new Game
-            option = new OptionMenu();
+            _scoreSelected = false;
+            // Instantiate a new option menu
+            _option = new OptionMenu();
+            // Instantiate a new about menu
+            _about = new AboutMenu();
         }
         #endregion
 
@@ -61,7 +66,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             for (int i = 0; i < Sprites.titleStartString.Length; i++)
             {
                 Buffer.WriteWithColor(0, 5 + i, " ", ConsoleColor.Yellow);
-                Buffer.Write(X_SELECTION - 28, 5 + i, Sprites.titleStartString[i]);
+                Buffer.Write(_X_SELECTION - 28, 5 + i, Sprites.titleStartString[i]);
             }
             // Display Buttons
             for (int i = 0; i < Sprites.playString.Length; i++)
@@ -76,34 +81,34 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             for (int i = 0; i < Sprites.playString.Length; i++)
             {
                 // If we have the play button selected
-                if (playSelected)
+                if (_playSelected)
                 {
                     MenuDisplayer.PlayButton(i, ConsoleColor.Red);
                     MenuDisplayer.ScoreButton(i, ConsoleColor.White);
                 }
                 // If we have the score button selected
-                else if (scoreSelected)
+                else if (_scoreSelected)
                 {
                     MenuDisplayer.ScoreButton(i, ConsoleColor.Red);
                     MenuDisplayer.PlayButton(i, ConsoleColor.White);
                     MenuDisplayer.AboutButton(i, ConsoleColor.White);
                 }
                 // If we have the about button selected
-                else if (aboutSelected)
+                else if (_aboutSelected)
                 {
                     MenuDisplayer.AboutButton(i, ConsoleColor.Red);
                     MenuDisplayer.ScoreButton(i, ConsoleColor.White);
                     MenuDisplayer.OptionButton(i, ConsoleColor.White);
                 }
                 // If we have the option button selected
-                else if (optionSelected)
+                else if (_optionSelected)
                 {
                     MenuDisplayer.OptionButton(i, ConsoleColor.Red);
                     MenuDisplayer.AboutButton(i, ConsoleColor.White);
                     MenuDisplayer.ExitButton(i, ConsoleColor.White);
                 }
                 // If we have the exit button selected
-                else if (exitSelected)
+                else if (_exitSelected)
                 {
                     MenuDisplayer.ExitButton(i, ConsoleColor.Red);
                     MenuDisplayer.OptionButton(i, ConsoleColor.White);
@@ -125,105 +130,114 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 // If the user pressed the down arrow key
                 case ConsoleKey.DownArrow:
                     // If the score button is selected
-                    if (scoreSelected)
+                    if (_scoreSelected)
                     {
                         // Change what button is selected
-                        scoreSelected = false;
-                        aboutSelected = true;
+                        _scoreSelected = false;
+                        _aboutSelected = true;
                     }
                     // If the play button is selected
-                    else if (playSelected)
+                    else if (_playSelected)
                     {
                         // Change what button is selected
-                        playSelected = false;
-                        scoreSelected = true;
+                        _playSelected = false;
+                        _scoreSelected = true;
                     }
                     // If the about button is selected
-                    else if (aboutSelected)
+                    else if (_aboutSelected)
                     {
                         // Change what button is selected
-                        aboutSelected = false;
-                        optionSelected = true;
+                        _aboutSelected = false;
+                        _optionSelected = true;
                     }
                     // If the option button is selected
-                    else if (optionSelected)
+                    else if (_optionSelected)
                     {
                         // Change what button is selected
-                        optionSelected = false;
-                        exitSelected = true;
+                        _optionSelected = false;
+                        _exitSelected = true;
                     }
                     // If the exit button is selected
-                    else if (exitSelected)
+                    else if (_exitSelected)
                     {
                         // Change what button is selected
-                        exitSelected = true;
+                        _exitSelected = true;
                     }
                     break;
                 // If the user pressed the up arrow key
                 case ConsoleKey.UpArrow:
                     // If the play button is selected
-                    if (playSelected)
+                    if (_playSelected)
                     {
                         // Change what button is selected
-                        playSelected = true;
+                        _playSelected = true;
                     }
                     // If the score button is selected
-                    else if (scoreSelected)
+                    else if (_scoreSelected)
                     {
                         // Change what button is selected
-                        scoreSelected = false;
-                        playSelected = true;
+                        _scoreSelected = false;
+                        _playSelected = true;
                     }
                     // If the about button is selected
-                    else if (aboutSelected)
+                    else if (_aboutSelected)
                     {
                         // Change what button is selected
-                        aboutSelected = false;
-                        scoreSelected = true;
+                        _aboutSelected = false;
+                        _scoreSelected = true;
                     }
                     // If the option button is selected
-                    else if (optionSelected)
+                    else if (_optionSelected)
                     {
                         // Change what button is selected
-                        optionSelected = false;
-                        aboutSelected = true;
+                        _optionSelected = false;
+                        _aboutSelected = true;
                     }
                     // If the exit button is selected
-                    else if (exitSelected)
+                    else if (_exitSelected)
                     {
                         // Change what button is selected
-                        exitSelected = false;
-                        optionSelected = true;
+                        _exitSelected = false;
+                        _optionSelected = true;
                     }
                     break;
                 // If the user pressed enter key
                 case ConsoleKey.Enter:
                     // If the play button is selected
-                    if (playSelected)
+                    if (_playSelected)
                     {
                         // Instantiate a new Game
-                        game = new Game();
-                        if (option.HardSelected)
+                        _game = new Game();
+                        if (_option.HardSelected)
                         {
-                            game.IsHard();
+                            _game.IsHard();
                         }
                         // Start the game
-                        game.Loop();
+                        _game.Loop();
                     }
-                    else if (optionSelected)
+                    else if (_optionSelected)
                     {
                         // Clear the buffer from the menu render
                         Buffer.ClearBuffer();
                         // The sound button starts selected
-                        option.SoundSelected = true;
+                        _option.SoundSelected = true;
                         // The difficulty button starts unselected
-                        option.DifficultySelected = false;
+                        _option.DifficultySelected = false;
                         // The exit button starts unselected
-                        option.ExitSelected = false;
+                        _option.ExitSelected = false;
                         // If it is the option menu
-                        option.IsOption = true;
+                        _option.IsOption = true;
                         // Render the option menu
-                        option.RenderMenu();
+                        _option.RenderMenu();
+                    }
+                    else if (_aboutSelected)
+                    {
+                        // Clear the buffer from the menu render
+                        Buffer.ClearBuffer();
+                        // If it is the option menu
+                        _about.IsAbout = true;
+                        // Render the option menu
+                        _about.RenderMenu();
                     }
                     else
                     {

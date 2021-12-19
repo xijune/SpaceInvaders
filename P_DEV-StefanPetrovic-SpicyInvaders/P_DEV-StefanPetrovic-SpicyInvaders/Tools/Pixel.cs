@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : This class is used to create a pixel
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     struct Pixel
     {
+        #region Attributs
+        #endregion
+
+        #region Propriétés des attributs
         public char pixelChar
         {
             get;
@@ -19,5 +24,12 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             get;
             set;
         }
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
+        #endregion
     }
 }

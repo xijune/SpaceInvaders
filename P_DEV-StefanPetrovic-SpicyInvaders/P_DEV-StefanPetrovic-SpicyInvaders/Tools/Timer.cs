@@ -1,35 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : This class is used to create a generig timer for several diferent purposes
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// This class is used to create a generig timer for several diferent purposes
-    /// </summary>
     class Timer
     {
+        #region Attributs
         // What limit we can count to
-        private int limit;
+        int _limit;
 
         // The counter
-        private int counter;
+        int _counter;
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// Constructor for the Timer class
         /// </summary>
-        /// <param name="limit">How much to count to</param>
+        /// <param name="_limit">How much to count to</param>
         public Timer(int limit)
         {
             // Set the limit to be equal to the passed value
-            this.limit = limit;
+            this._limit = limit;
 
             // Set the counter to start at 0
-            counter = 0;
+            _counter = 0;
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Returns a true or false base on if the timer is still counting or not
         /// </summary>
@@ -37,13 +41,13 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public bool IsCounting()
         {
             // Increase counter by 1 each frame
-            counter++;
+            _counter++;
 
             // If the counter is greater or equal to the set limit
-            if (counter >= limit)
+            if (_counter >= _limit)
             {
                 // Set the counter to 0
-                counter = 0;
+                _counter = 0;
 
                 // Return false
                 return false;
@@ -52,5 +56,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Return true
             return true;
         }
+        #endregion
     }
 }

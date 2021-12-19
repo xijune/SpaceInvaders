@@ -1,31 +1,31 @@
-﻿using System;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : The Bullets class holds and controls several bullets
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// The Bullets class holds and controls several bullets
-    /// </summary>
     class Bullets
     {
-        // List with the current bullets on the scene
-        public List<Bullet> BulletsList { get; private set; }
-
+        #region Attributs
         // The current number of bullets
         private int _numOfBullets;
-
         // The max number of bullets of the scene
         private int _maxNumOfBullets;
-
         // The endRow for the bullet
         private int _endRow;
-
         // How fast the bullet will move
         private Timer _moveTimer;
+        #endregion
 
+        #region Propriétés des attributs
+        // List with the current bullets on the scene
+        public List<Bullet> BulletsList { get; private set; }
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// `ShipBullets` constructor class
         /// </summary>
@@ -46,7 +46,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Set the starting number of bullets
             _numOfBullets = 0;
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Updates all the bullets
         /// </summary>
@@ -117,5 +119,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 BulletsList.Add(new Bullet(x, y, movement));
             }
         }
+        #endregion
     }
 }

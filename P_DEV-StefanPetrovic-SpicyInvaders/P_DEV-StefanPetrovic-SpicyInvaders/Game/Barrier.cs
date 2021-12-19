@@ -1,23 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Barrier Class corresponds to an ingame barrier object
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class Barrier
     {
-        private const int _BARRIER_HEIGHT = 4;
-        private const int _BARRIER_WIDTH = 8;
-
+        #region Attributs
+        //
+        const int _BARRIER_HEIGHT = 4;
+        //
+        const int _BARRIER_WIDTH = 8;
+        //
         private string[] _sprite;
+        //
         private int[][] _barrierGrid;
-
-        /// <summary>
-        /// The coordinate for the ship
-        /// </summary>
+        // The coordinate for the ship
         private Vector _coordinates;
-        public Vector Coordinates => _coordinates;
+        #endregion
 
+        #region Propriétés des attributs
+        // The coordinate for the ship
+        public Vector Coordinates => _coordinates;
+        #endregion
+
+        #region Constructeurs
+        /// <summary>
+        /// Constructor for the barrier class
+        /// </summary>
+        /// <param name="x">The starting x position</param>
+        /// <param name="y">The starting y position</param>
         public Barrier(int x, int y)
         {
             _sprite = new string[4]
@@ -42,7 +57,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 }
             }
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Set's the color for the barriers
         /// </summary>
@@ -75,7 +92,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <param name="myMin"></param>
         /// <param name="myMax"></param>
         /// <returns></returns>
-        public int Clamp (int myValue, int myMin, int myMax)
+        public int Clamp(int myValue, int myMin, int myMax)
         {
             if (myMin <= myValue && myValue <= myMax) { return myValue; }
             if (myValue < myMin) { return myMin; }
@@ -101,5 +118,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         {
             _barrierGrid[Clamp(bulletCoordinate.Y - _coordinates.Y + 1, 0, 3)][bulletCoordinate.X - _coordinates.X] = 0;
         }
+        #endregion
     }
 }

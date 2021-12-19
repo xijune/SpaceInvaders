@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Interface for all game objects
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Interface for all game objects
-    /// </summary>
     interface IGameObject
     {
+        #region Attributs
+        #endregion
+
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
         /// <summary>
         /// The update method of the game object
         /// </summary>
@@ -20,5 +26,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// The start method of the game object
         /// </summary>
         void Start();
+        #endregion
     }
 }

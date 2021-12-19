@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : An enum for the type of explosion
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// An enum for the type of explosion
-    /// </summary>
     public enum ExplosionType
     {
+        #region Attributs
         SMALL,
         LARGE
+        #endregion
+
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
+        #endregion
+
+        #region Methodes
+        #endregion
     }
 }

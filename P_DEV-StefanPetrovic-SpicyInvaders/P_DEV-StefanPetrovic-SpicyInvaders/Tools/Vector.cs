@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : This class is used for vectors
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
     class Vector
     {
+        #region Attributs
+        #endregion
+
+        #region Propriétés des attributs
         /// <summary>
         /// Entity X Coordinates
         /// </summary>
@@ -17,7 +20,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// Entity Y Coordinates
         /// </summary>
         public int Y { get; set; }
+        #endregion
 
+        #region Constructeurs
         /// <summary>
         /// Entity coordinates constructor
         /// </summary>
@@ -31,5 +36,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Initialize the `Y` coordinates with the given value
             Y = y;
         }
+        #endregion
+
+        #region Methodes
+        #endregion
     }
 }

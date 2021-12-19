@@ -1,25 +1,28 @@
-﻿using System;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Class to hold and manage all the barriers in the game
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Class to hold and manage all the barriers in the game
-    /// </summary>
     class Barriers : GameObject
     {
+        #region Attributs
         // Necessary constants for this script
-        private const int _NUM_OF_BARRIERS = 4;
-        private const int _POSITION_OFFSET = 20;
-        private const int _START_X = 16;
-        private const int _Y_POS = 51;
-
+        const int _NUM_OF_BARRIERS = 4;
+        const int _POSITION_OFFSET = 20;
+        const int _START_X = 16;
+        const int _Y_POS = 51;
         // List with all the barriers
         private List<Barrier> _barriers;
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// Barriers class constructor
         /// </summary>
@@ -34,7 +37,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _barriers.Add(new Barrier(_START_X + i * _POSITION_OFFSET, _Y_POS));
             }
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Is called at the start of the game
         /// </summary>
@@ -88,5 +93,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
 
             return retVal;
         }
+        #endregion
     }
 }

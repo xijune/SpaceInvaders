@@ -1,19 +1,23 @@
-﻿using System;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Controlls all the explosions in the game
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Controlls all the explosions in the game
-    /// </summary>
     class Explosions : GameObject
     {
+        #region Attributs
         // List of explosions
         private List<Explosion> _explosions;
+        #endregion
 
+        #region Propriétés des attributs
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// Constructor for the Explosions class
         /// </summary>
@@ -22,7 +26,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Initialize the list of explosions
             _explosions = new List<Explosion>();
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// The Update method
         /// </summary>
@@ -53,5 +59,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Adds a new explosion to the list
             _explosions.Add(new Explosion(coordinate, explosionType));
         }
+        #endregion
     }
 }

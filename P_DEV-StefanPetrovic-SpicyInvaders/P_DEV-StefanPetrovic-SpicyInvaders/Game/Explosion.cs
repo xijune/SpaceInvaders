@@ -1,41 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : Displays an explosion where an object was destroyed
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
-    /// <summary>
-    /// Displays an explosion where an object was destroyed
-    /// </summary>
     class Explosion
     {
+        #region Attributs
         // Constant to define the sprite height
-        private const int _SPRITE_HEIGHT = 3;
-
+        const int _SPRITE_HEIGHT = 3;
         /// <summary>
         /// The coordinate for the ship
         /// </summary>
         private Vector _coordinates;
-        public Vector Coordinates => _coordinates;
-
         // Create a new Timer
         private Timer _timer;
-
         // Save the type of explosion
         private ExplosionType _type;
-
         // All the sprites for the explosions
         private string[] _sprite1;
         private string[] _sprite2;
         private string[] _sprite3;
         private string[] _sprite4;
         private string[] _sprite5;
-
         // The current animation frame
         private int _animation;
+        #endregion
 
+        #region Propriétés des attributs
+        public Vector Coordinates => _coordinates;
+        #endregion
+
+        #region Constructeurs
         /// <summary>
         /// Constructor for the Explosion class
         /// </summary>
@@ -62,7 +59,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             // Set the explosion sprites
             SetSprites();
         }
+        #endregion
 
+        #region Methodes
         /// <summary>
         /// Writes the sprite of the explosion to the buffer
         /// </summary>
@@ -188,5 +187,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 "         "
             };
         }
+        #endregion
     }
 }
