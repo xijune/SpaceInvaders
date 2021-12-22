@@ -14,8 +14,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #region Attributs
         // Constant that holds the frame time
         private const int _FAME_TIME = 40;
-        private const int _BASE_DELAY = 25;
-        private const int _START_LIFES = 1;
+        private const int _BASE_DELAY = 20;
+        private const int _START_LIFES = 3;
         // The current score
         private int _score;
         // The current number of lifes

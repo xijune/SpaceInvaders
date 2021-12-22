@@ -218,6 +218,12 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         }
                         // Start the game
                         _game.Loop();
+
+                        _score.UserName = _game.UserName;
+
+                        _score.Score = _game.Score;
+
+                        _score.WriteFile();
                     }
                     // If the option button is selected
                     else if (_optionSelected)
@@ -252,10 +258,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         Buffer.ClearBuffer();
                         // If it is the option menu
                         _score.IsScore = true;
-                        // Username of the last player
-                        _score.UserName = _game.UserName;
-                        // Score of the last player
-                        _score.Score = _game.Score;
+                        _score.ReadFile();
                         // Render the option menu
                         _score.RenderMenu();
                     }

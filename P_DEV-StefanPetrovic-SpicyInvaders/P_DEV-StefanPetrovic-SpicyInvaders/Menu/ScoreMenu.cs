@@ -18,7 +18,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         // If the option menu is selected
         private bool _isScore;
         // Path of the user
-        private static string _pathUser = @"%USERPROFILE%\Desktop\Score.txt";
+        //private static string _pathUser = @"%USERPROFILE%\Desktop\Score.txt";
+        private static string _pathUser = @"%USERPROFILE%\OneDrive\Bureau\Score.txt";
         // Path of the file
         private static string _pathFile = Environment.ExpandEnvironmentVariables(_pathUser);
         // UserName of the last player
@@ -71,11 +72,12 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         {
             while (_isScore)
             {
+                ReadFile();
                 // Display Title
-                for (int i = 0; i < Sprites.titleAboutString.Length; i++)
+                for (int i = 0; i < Sprites.titleScoreString.Length; i++)
                 {
                     Buffer.WriteWithColor(0, 5 + i, " ", ConsoleColor.Yellow);
-                    Buffer.Write(_X_SELECTION - 6, 5 + i, Sprites.titleAboutString[i]);
+                    Buffer.Write(_X_SELECTION - 6, 5 + i, Sprites.titleScoreString[i]);
                 }
                 // Display Buttons
                 for (int i = 0; i < Sprites.playString.Length; i++)
@@ -168,8 +170,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                     while ((line = sr.ReadLine()) != null)
                     {
                         // Set the cursor position and write content
-                        Console.SetCursorPosition(15, positionY);
-                        Console.WriteLine(line);
+                        Buffer.WriteWithColor(0, positionY, " ", ConsoleColor.White);
+                        Buffer.Write(_X_SELECTION, positionY, line);
 
                         // Increment X position
                         positionY++;

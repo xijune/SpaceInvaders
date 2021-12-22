@@ -32,6 +32,14 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "██─▀─███─▄─▀█─██─██─██─████─███",
             "▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▀▄▄▄▄▀▀▀▄▄▄▀▀"
         };
+        // Design of the about title
+        public static readonly string[] titleScoreString = new string[4]
+        {
+            "██████████████████████████████",
+            "█─▄▄▄▄█─▄▄▄─█─▄▄─█▄─▄▄▀█▄─▄▄─█",
+            "█▄▄▄▄─█─███▀█─██─██─▄─▄██─▄█▀█",
+            "▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀"
+        };
         // Design of the play text
         public static readonly string[] playString = new string[2]
         {
