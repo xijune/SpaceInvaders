@@ -83,7 +83,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         {
             Console.SetCursorPosition(0, 0);
 
-            ConsoleColor currentForeground = ConsoleColor.Black;
+            ConsoleColor currentForeground = ConsoleColor.White;
 
             for (int y = 0; y < YDim; y++)
             {

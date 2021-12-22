@@ -49,6 +49,16 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #endregion
 
         #region Propriétés des attributs
+        public string UserName
+        {
+            get { return _userName; }
+            set { _userName = value; }
+        }
+        public int Score
+        {
+            get { return _score; }
+            set { _score = value; }
+        }
         #endregion
 
         #region Constructeurs
@@ -174,7 +184,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
 
             GameOver();
 
-            UserName();
+            UserNameWrite();
 
             // Clears the buffer
             Buffer.ClearBuffer();
@@ -183,7 +193,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         private void GameOver()
         {
             // Create a new timer to be a counter for the animations duration
-            Timer counter = new Timer(201);
+            Timer counter = new Timer(130);
 
             // Create a new timer for the blinking animation
             Timer blinker = new Timer(9);
@@ -227,16 +237,18 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             }
         }
 
-        private void UserName()
+        private void UserNameWrite()
         {
+            Buffer.ClearBuffer();
             Buffer.WriteWithColor(0, 22, " ", ConsoleColor.Blue);
-            Buffer.WriteWithColor(0, 24, " ", ConsoleColor.Blue);
             Buffer.Delete(36, 22, "P L A Y E R   U S E R N A M E :");
 
             // Display the frame
             Buffer.DisplayRender();
             Console.SetCursorPosition(38, 24);
+            Console.ForegroundColor = ConsoleColor.White;
             _userName = Console.ReadLine();
+
         }
 
         /// <summary>

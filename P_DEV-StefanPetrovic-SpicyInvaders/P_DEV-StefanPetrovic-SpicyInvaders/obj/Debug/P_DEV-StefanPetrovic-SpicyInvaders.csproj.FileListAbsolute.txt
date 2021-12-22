@@ -13,3 +13,10 @@ C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyI
 C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe.config
 C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
 C:\Users\stefa\OneDrive\Bureau\GitRepo\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe.config
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csprojAssemblyReference.cache
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.CoreCompileInputs.cache
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\pz21bmv.ETMLNET\Desktop\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb

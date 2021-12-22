@@ -28,6 +28,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         private OptionMenu _option;
         // Holds a about menu instance
         private AboutMenu _about;
+        // Holds a score menu instance
+        private ScoreMenu _score;
         #endregion
 
         #region Propriétés des attributs
@@ -53,6 +55,8 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             _option = new OptionMenu();
             // Instantiate a new about menu
             _about = new AboutMenu();
+            // Instantiate a new score menu
+            _score = new ScoreMenu();
         }
         #endregion
 
@@ -215,6 +219,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         // Start the game
                         _game.Loop();
                     }
+                    // If the option button is selected
                     else if (_optionSelected)
                     {
                         // Clear the buffer from the menu render
@@ -230,6 +235,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         // Render the option menu
                         _option.RenderMenu();
                     }
+                    // If the about button is selected
                     else if (_aboutSelected)
                     {
                         // Clear the buffer from the menu render
@@ -238,6 +244,20 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         _about.IsAbout = true;
                         // Render the option menu
                         _about.RenderMenu();
+                    }
+                    // If the score button is selected
+                    else if (_scoreSelected)
+                    {
+                        // Clear the buffer from the menu render
+                        Buffer.ClearBuffer();
+                        // If it is the option menu
+                        _score.IsScore = true;
+                        // Username of the last player
+                        _score.UserName = _game.UserName;
+                        // Score of the last player
+                        _score.Score = _game.Score;
+                        // Render the option menu
+                        _score.RenderMenu();
                     }
                     else
                     {
