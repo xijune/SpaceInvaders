@@ -7,22 +7,35 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Enemy inherits of GameObject
+    /// </summary>
     class Enemy : GameObject
     {
         #region Attributs
-        // Constants related to what's done in this script
+        /// <summary>
+        /// Constant related to what's done in this script
+        /// </summary>
         private const int _SPRITE_HEIGTH = 3;
         /// <summary>
         /// The coordinate for the ship
         /// </summary>
         private Vector _coordinates;
-        // The enemy first sprite
+        /// <summary>
+        /// Enemy first sprite
+        /// </summary>
         private string[] _sprite1;
-        // The enemy second sprite
+        /// <summary>
+        /// Enemy second sprite
+        /// </summary>
         private string[] _sprite2;
-        // The enemy current sprite
+        /// <summary>
+        /// Enemy current sprite
+        /// </summary>
         private string[] _currentSprite;
-        // The color of the enemy
+        /// <summary>
+        /// Color of the enemy
+        /// </summary>
         private ConsoleColor _myColor;
         #endregion
 

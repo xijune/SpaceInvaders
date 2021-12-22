@@ -9,51 +9,98 @@ using System.Threading;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Game
+    /// </summary>
     class Game
     {
         #region Attributs
-        // Constant that holds the frame time
+        /// <summary>
+        /// Constant for the fame time
+        /// </summary>
         private const int _FAME_TIME = 40;
+        /// <summary>
+        /// Constant for the base delay
+        /// </summary>
         private const int _BASE_DELAY = 25;
+        /// <summary>
+        /// Constant for the number of life at start
+        /// </summary>
         private const int _START_LIFES = 1;
-        // The current score
+        /// <summary>
+        /// Current score
+        /// </summary>
         private int _score;
-        // The current number of lifes
+        /// <summary>
+        /// Current number of lifes
+        /// </summary>
         private int _lifes;
-        // The current level
+        /// <summary>
+        /// Current level
+        /// </summary>
         private int _level;
-        // The current difficulty
+        /// <summary>
+        /// Current difficulty
+        /// </summary>
         private int _isHard;
-        // Bool knows if the game is over
+        /// <summary>
+        /// Bool to know if the game is over
+        /// </summary>
         private bool _gameOver;
-        // Username of the player
+        /// <summary>
+        /// Username of the player
+        /// </summary>
         private string _userName;
-        // Collection with all the game objects
+        /// <summary>
+        /// Collection with all the game objects
+        /// </summary>
         List<GameObject> objectsCollection;
-        // Create a list of bullets to delete
+        /// <summary>
+        /// List of bullets to delete
+        /// </summary>
         List<Bullet> bulletsToDelete;
-        // Create a new list of bullets
+        /// <summary>
+        /// List of bullets
+        /// </summary>
         List<Bullet> bullets;
-        // Create a new Timer
+        /// <summary>
+        /// Timer
+        /// </summary>
         Timer counter;
-        // Create a new blinkCounter
+        /// <summary>
+        /// blinkCounter
+        /// </summary>
         Timer blinkCounter;
-        // Instance of the ship
+        /// <summary>
+        /// Instance of the ship
+        /// </summary>
         Ship ship;
-        // Instance of the enemies
+        /// <summary>
+        /// Instance of the enmies
+        /// </summary>
         Enemies enemies;
-        // Instance of the barriers
+        /// <summary>
+        /// Instance of the barriers
+        /// </summary>
         Barriers barriers;
-        // Instace of the explosions
+        /// <summary>
+        /// Instance of the explosions
+        /// </summary>
         Explosions explosions;
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Getter, setter on _userName
+        /// </summary>
         public string UserName
         {
             get { return _userName; }
             set { _userName = value; }
         }
+        /// <summary>
+        /// Getter, setter on _score
+        /// </summary>
         public int Score
         {
             get { return _score; }
@@ -190,6 +237,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             Buffer.ClearBuffer();
         }
 
+        /// <summary>
+        /// Game GameOver Class
+        /// </summary>
         private void GameOver()
         {
             // Create a new timer to be a counter for the animations duration
@@ -237,8 +287,12 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             }
         }
 
+        /// <summary>
+        /// UserNameWrite method to take the username
+        /// </summary>
         private void UserNameWrite()
         {
+            // Show title for the user
             Buffer.ClearBuffer();
             Buffer.WriteWithColor(0, 22, " ", ConsoleColor.Blue);
             Buffer.Delete(36, 22, "P L A Y E R   U S E R N A M E :");
@@ -643,6 +697,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             NumberManager.WriteLifes(_lifes);
         }
 
+        /// <summary>
+        /// Put the _isHard variable to 12
+        /// </summary>
         public void IsHard()
         {
             _isHard = 12;

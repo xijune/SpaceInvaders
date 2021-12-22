@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Buffer" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAFAAEEAAAAAAkAAAEAAAA=</HashCode>
+      <FileName>Buffer\Buffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.DoubleBuffer" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAACAAACEAAAQAAwAABAAAgAAAAAABAAAA=</HashCode>
+      <FileName>Buffer\DoubleBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Barrier" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAIABAAAAAAAIAAMAAAAAgAIAkAAAEAAAA=</HashCode>
+      <FileName>Game\Barrier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Barriers" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAEASAAAAAAAASAAAAAEAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Barriers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Bullet" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAIAAAAAAAAAICAIAEAAAAAAAAAAAEAAAI=</HashCode>
+      <FileName>Game\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Bullets" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIIAAAACAAACAAAAAAAAAABAEAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Game\Bullets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Enemies" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAWMABACQKBABAAgCQAACCBAABAAAIIjyQUAEBWAhIA=</HashCode>
+      <FileName>Game\Enemies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Enemy" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIECAAAIAJAAAAAgIAkAAAIIEAQAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Game\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Explosion" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAoAAQAAAAAgAggoAEAwIAAAAAAABAAAAA=</HashCode>
+      <FileName>Game\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Explosions" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Explosions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Game" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgACgAAIAIABAigAAAUAARAAgiKEkAEhgYIAAAAQAAA=</HashCode>
+      <FileName>Game\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Ship" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQSgAAECCIAIAAAAAACAAABAICAAIBAAQEECABAAIAA=</HashCode>
+      <FileName>Game\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.GameObject" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObject\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.AboutMenu" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAAAoAA=</HashCode>
+      <FileName>Menu\AboutMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Menu" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAABAgAgAgAAAAAAAAAgAABQgAAAAAAAAAoAQ=</HashCode>
+      <FileName>Menu\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.MenuDisplayer" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBIASAgECQgAAAAAQAAIgRAIAAICIAAAAAAAAg=</HashCode>
+      <FileName>Menu\MenuDisplayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.OptionMenu" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BYAEAQAAEAAgAAFAgAAAAAAAAAAQAQgAAggAAACAoIA=</HashCode>
+      <FileName>Menu\OptionMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.ScoreMenu" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEABAACAAAQggAAAAAAAAAAAAAACgAgQIACAAAoAA=</HashCode>
+      <FileName>Menu\ScoreMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Program" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.NumberManager" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACRAAgQMSQgBEBAAAAAAACAAEhAAAAAAAiIAEEAAA=</HashCode>
+      <FileName>Tools\NumberManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Sprites" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAhEEAAAAAAAAAAAgAAAAAQAEABAFHABAkAgAI=</HashCode>
+      <FileName>Tools\Sprites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Timer" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAEAA=</HashCode>
+      <FileName>Tools\Timer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P_DEV_StefanPetrovic_SpicyInvaders.Vector" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Tools\Vector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="P_DEV_StefanPetrovic_SpicyInvaders.Pixel" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Tools\Pixel.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="P_DEV_StefanPetrovic_SpicyInvaders.IGameObject" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObject\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="P_DEV_StefanPetrovic_SpicyInvaders.ExplosionType" Collapsed="true">
+    <Position X="12" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\ExplosionsType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="P_DEV_StefanPetrovic_SpicyInvaders.MoveType" Collapsed="true">
+    <Position X="13.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAQAAAAAAAAICAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\MoveType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

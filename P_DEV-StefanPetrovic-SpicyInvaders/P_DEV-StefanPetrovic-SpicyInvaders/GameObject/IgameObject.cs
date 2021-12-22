@@ -5,6 +5,9 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Interface IGameObject
+    /// </summary>
     interface IGameObject
     {
         #region Attributs

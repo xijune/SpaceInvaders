@@ -5,6 +5,9 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Vector
+    /// </summary>
     class Vector
     {
         #region Attributs

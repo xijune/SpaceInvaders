@@ -7,21 +7,34 @@ using System.Collections.Generic;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Bullets
+    /// </summary>
     class Bullets
     {
         #region Attributs
-        // The current number of bullets
+        /// <summary>
+        /// The current number of bullets
+        /// </summary>
         private int _numOfBullets;
-        // The max number of bullets of the scene
+        /// <summary>
+        /// The max number of bullets of the scene
+        /// </summary>
         private int _maxNumOfBullets;
-        // The endRow for the bullet
+        /// <summary>
+        /// The endRow for the bullet
+        /// </summary>
         private int _endRow;
-        // How fast the bullet will move
+        /// <summary>
+        /// How fast the bullet will move
+        /// </summary>
         private Timer _moveTimer;
         #endregion
 
         #region Propriétés des attributs
-        // List with the current bullets on the scene
+        /// <summary>
+        /// List with the current bullets on the scene
+        /// </summary>
         public List<Bullet> BulletsList { get; private set; }
         #endregion
 

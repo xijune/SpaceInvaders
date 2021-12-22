@@ -7,6 +7,9 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Program
+    /// </summary>
     class Program
     {
         #region Attributs
@@ -19,6 +22,10 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #endregion
 
         #region Methodes
+        /// <summary>
+        /// Main method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             // Hides the console cursor to not be visible

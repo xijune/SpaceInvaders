@@ -7,42 +7,90 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Ship inherits from GameObject0
+    /// </summary>
     class Ship : GameObject
     {
         #region Attributs
-        // Constants related to what's done in this script
+        /// <summary>
+        /// Number of bullets for initialization
+        /// </summary>
         private const int INIT_NUM_BULLETS = 3;
+        /// <summary>
+        /// Max number of bullets
+        /// </summary>
         private const int MAX_NUM_BULLETS = 8;
+        /// <summary>
+        /// Left boundary
+        /// </summary>
         private const int LEFT_BOUNDARY = 0;
+        /// <summary>
+        /// Right boudary
+        /// </summary>
         private const int RIGHT_BOUNDARY = 93;
+        /// <summary>
+        /// Upper boundary
+        /// </summary>
         private const int UPPER_BOUNDARY = 6;
+        /// <summary>
+        /// Speed of the bullet
+        /// </summary>
         private const int BULLET_SPEED = 1;
+        /// <summary>
+        /// Speed of the movement
+        /// </summary>
         private const int MOVE_SPEED = 2;
+        /// <summary>
+        /// X position
+        /// </summary>
         private const int INIT_X = 47;
+        /// <summary>
+        /// Y position
+        /// </summary>
         private const int INIT_Y = 55;
-        // The coordinate for the ship
+        /// <summary>
+        /// Coordinates of the ship
+        /// </summary>
         private Vector _coordinates;
-        // The sprite for the ship
+        /// <summary>
+        /// Sprite for the ship
+        /// </summary>
         private string[] _sprite;
-        // The current type of movement the ship has
+        /// <summary>
+        /// Current type of movement the ship has
+        /// </summary>
         private MoveType _currentMove;
-        // If the game is paused
+        /// <summary>
+        /// If the game is paused
+        /// </summary>
         private bool _pause;
-        // A timer for the movement of the ship
+        /// <summary>
+        /// Timer for movement
+        /// </summary>
         private Timer _moveTimer;
-        // Hold the total number of bullets
+        /// <summary>
+        /// Total number of bullets
+        /// </summary>
         private int _numOfBullets;
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Vector for Coordinates
+        /// </summary>
         public Vector Coordinates => _coordinates;
-        // Instance of Bullets
+        /// <summary>
+        /// Getter for the ShipBullets
+        /// </summary>
         public Bullets ShipBullets
         {
             get;
             private set;
         }
-        // Check if a life was lost
+        /// <summary>
+        /// Getter, setter to see if a life was lost
+        /// </summary>
         public bool LifeLost
         {
             get;

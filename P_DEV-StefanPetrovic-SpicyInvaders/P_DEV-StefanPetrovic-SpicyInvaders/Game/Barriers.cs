@@ -7,15 +7,31 @@ using System.Collections.Generic;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Barriers inherits GameObject
+    /// </summary>
     class Barriers : GameObject
     {
         #region Attributs
-        // Necessary constants for this script
+        /// <summary>
+        /// Number of barriers
+        /// </summary>
         const int _NUM_OF_BARRIERS = 4;
+        /// <summary>
+        /// Offset position
+        /// </summary>
         const int _POSITION_OFFSET = 20;
+        /// <summary>
+        /// Start X position
+        /// </summary>
         const int _START_X = 16;
+        /// <summary>
+        /// Y position
+        /// </summary>
         const int _Y_POS = 51;
-        // List with all the barriers
+        /// <summary>
+        /// List with all the barriers
+        /// </summary>
         private List<Barrier> _barriers;
         #endregion
 

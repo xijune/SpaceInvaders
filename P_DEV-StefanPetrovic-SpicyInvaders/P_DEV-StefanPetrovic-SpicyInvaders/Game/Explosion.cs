@@ -5,30 +5,58 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Explosion
+    /// </summary>
     class Explosion
     {
         #region Attributs
-        // Constant to define the sprite height
+        /// <summary>
+        /// Constant to define the sprite height
+        /// </summary>
         const int _SPRITE_HEIGHT = 3;
         /// <summary>
         /// The coordinate for the ship
         /// </summary>
         private Vector _coordinates;
-        // Create a new Timer
+        /// <summary>
+        /// Create a new Timer
+        /// </summary>
         private Timer _timer;
-        // Save the type of explosion
+        /// <summary>
+        /// Save the explosion type
+        /// </summary>
         private ExplosionType _type;
-        // All the sprites for the explosions
+        /// <summary>
+        /// Sprite for explosion 1
+        /// </summary>
         private string[] _sprite1;
+        /// <summary>
+        /// Sprite for explosion 2
+        /// </summary>
         private string[] _sprite2;
+        /// <summary>
+        /// Sprite for explosion 3
+        /// </summary>
         private string[] _sprite3;
+        /// <summary>
+        /// Sprite for explosion 4
+        /// </summary>
         private string[] _sprite4;
+        /// <summary>
+        /// Sprite for explosion 5
+        /// </summary>
         private string[] _sprite5;
-        // The current animation frame
+        /// <summary>
+        /// Current animation frame
+        /// </summary>
         private int _animation;
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Vector of Coordinates
+        /// </summary>
         public Vector Coordinates => _coordinates;
         #endregion
 

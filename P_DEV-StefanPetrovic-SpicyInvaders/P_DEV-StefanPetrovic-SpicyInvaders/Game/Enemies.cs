@@ -8,57 +8,138 @@ using System.Collections.Generic;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Enemis inherits GameObject
+    /// </summary>
     class Enemies : GameObject
     {
         #region Attributs
-        // Constants related to what's done in this script
+        /// <summary>
+        /// Animation init speed
+        /// </summary>
         const int _ANIMATION_INIT_SPEED = 12;
+        /// <summary>
+        /// Number of columns
+        /// </summary>
         const int _NUMBER_OF_COLUMNS = 7;
+        /// <summary>
+        /// Bullet move speed
+        /// </summary>
         const int _BULLET_MOVE_SPEED = 2;
+        /// <summary>
+        /// Move down steps
+        /// </summary>
         const int _MOVE_DOWN_STEPS = 30;
+        /// <summary>
+        /// Number of bullet at the initialization
+        /// </summary>
         const int _INIT_NUM_BULLETS = 3;
+        /// <summary>
+        /// Max number of bullet
+        /// </summary>
         const int _MAX_NUM_BULLETS = 10;
+        /// <summary>
+        /// Bottom boundary
+        /// </summary>
         const int _BOTTOM_BOUDARY = 54;
+        /// <summary>
+        /// Right boundary
+        /// </summary>
         const int _RIGHT_BOUNDARY = 90;
+        /// <summary>
+        /// Lower boundary
+        /// </summary>
         const int _LOWER_BOUNDARY = 58;
+        /// <summary>
+        /// Move down speed
+        /// </summary>
         const int _MOVE_DOWN_SPEED = 5;
+        /// <summary>
+        /// Move init speed
+        /// </summary>
         const int _MOVE_INIT_SPEED = 7;
+        /// <summary>
+        /// Move up steps
+        /// </summary>
         const int _MOVE_UP_STEPS = 15;
+        /// <summary>
+        /// Move up speed
+        /// </summary>
         const int _MOVE_UP_SPEED = 5;
+        /// <summary>
+        /// Top start row
+        /// </summary>
         const int _TOP_START_ROW = 6;
+        /// <summary>
+        /// Left boundary
+        /// </summary>
         const int _LEFT_BOUNDARY = 3;
+        /// <summary>
+        /// Y min
+        /// </summary>
         const int _Y_MIN = 12;
-        // The current movement direction of all enemies
+        /// <summary>
+        /// Current movement direction of all enemies
+        /// </summary>
         private MoveType _currentMove;
-        // A timer for the animation
+        /// <summary>
+        /// Timer for the animation
+        /// </summary>
         private Timer _animationTimer;
-        // A timer for moving down
+        /// <summary>
+        /// Timer for moving down
+        /// </summary>
         private Timer _moveDownTimer;
-        // A timer for the movement
+        /// <summary>
+        /// Timer for the movement
+        /// </summary>
         private Timer _moveTimer;
-        // A timer for the movement up steps
+        /// <summary>
+        /// Timer fot the movement up steps
+        /// </summary>
         private Timer _moveUpSteps;
-        // A timer for the movement up speed
+        /// <summary>
+        /// Timer for the movement up speed
+        /// </summary>
         private Timer _moveUpSpeed;
-        // Instantiate a new Random
+        /// <summary>
+        /// Instantiate a new Random
+        /// </summary>
         private Random rnd = new Random();
-        // The step ammount to move the enemy down
+        /// <summary>
+        /// The step ammount to move the enemy down
+        /// </summary>
         private int _moveDownSteps;
+        /// <summary>
+        /// Number of bullets
+        /// </summary>
         private int _numOfBullets;
-        // If the enemy is on the first sprite
+        /// <summary>
+        /// If the enemy is on the first sprite
+        /// </summary>
         private bool _firstSprite;
-        // If the enemy is to go down
+        /// <summary>
+        /// If the enemy is to go down
+        /// </summary>
         private bool _increaseY;
-        // If the enemy will move this frame
+        /// <summary>
+        /// If the enemy will move this frame
+        /// </summary>
         private bool _moveEnemy;
-        // Check if the ship died
+        /// <summary>
+        /// Check if the ship died
+        /// </summary>
         public bool shipDestroyed;
         #endregion
 
         #region Propriétés des attributs
-        // A list with all the enemies
+        /// <summary>
+        /// Getter for the EnemyList
+        /// </summary>
         public List<Enemy> EnemyList { get; private set; }
-        // Instance of Bullets
+        /// <summary>
+        /// Getter on EnemyBullets
+        /// </summary>
         public Bullets EnemyBullets { get; private set; }
         #endregion
 
@@ -108,6 +189,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #endregion
 
         #region Methodes
+        /// <summary>
+        /// Update method
+        /// </summary>
         public override void Update()
         {
             // If the animation timer has finished counting

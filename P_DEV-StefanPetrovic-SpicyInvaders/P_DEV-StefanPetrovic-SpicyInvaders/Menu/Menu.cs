@@ -7,28 +7,51 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Menu
+    /// </summary>
     public class Menu
     {
         #region Attributs
-        // Constant of the X value to render all button
+        /// <summary>
+        /// Constant of the X value to render all button
+        /// </summary>
         const int _X_SELECTION = 38;
-        // If the play button is selected
+        /// <summary>
+        /// If the play button is selected
+        /// </summary>
         private bool _playSelected;
-        // If the exit button is selected
+        /// <summary>
+        /// If the exit button is selected
+        /// </summary>
         private bool _exitSelected;
-        // If the option button is selected
+        /// <summary>
+        /// If the option button is selected
+        /// </summary>
         private bool _optionSelected;
-        // If the about button is selected
+        /// <summary>
+        /// If the about button is selected
+        /// </summary>
         private bool _aboutSelected;
-        // If the score button is selected
+        /// <summary>
+        /// If the score button is selected
+        /// </summary>
         private bool _scoreSelected;
-        // Holds a game instance
+        /// <summary>
+        /// Holds a game instance
+        /// </summary>
         private Game _game;
-        // Holds a option menu instance
+        /// <summary>
+        /// Holds a option menu instance
+        /// </summary>
         private OptionMenu _option;
-        // Holds a about menu instance
+        /// <summary>
+        /// Holds a about menu instance
+        /// </summary>
         private AboutMenu _about;
-        // Holds a score menu instance
+        /// <summary>
+        /// Holds a score menu instance
+        /// </summary>
         private ScoreMenu _score;
         #endregion
 
@@ -252,10 +275,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         Buffer.ClearBuffer();
                         // If it is the option menu
                         _score.IsScore = true;
-                        // Username of the last player
-                        _score.UserName = _game.UserName;
-                        // Score of the last player
-                        _score.Score = _game.Score;
+                        // Call the method ReadFile
+                        _score.ReadFile();
+
                         // Render the option menu
                         _score.RenderMenu();
                     }

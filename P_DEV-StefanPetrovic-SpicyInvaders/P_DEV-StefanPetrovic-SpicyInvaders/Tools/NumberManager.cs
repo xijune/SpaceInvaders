@@ -7,13 +7,27 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class NumberManager
+    /// </summary>
     public static class NumberManager
     {
         #region Attributs
-        // Necessary constants to be used in this script
+        /// <summary>
+        /// Number rows
+        /// </summary>
         const int _NUMBER_ROWS = 3;
+        /// <summary>
+        /// Score X position
+        /// </summary>
         const int _SCORE_X_POS = 8;
+        /// <summary>
+        /// Life X position
+        /// </summary>
         const int _LIFES_X_POS = 87;
+        /// <summary>
+        /// Level X position
+        /// </summary>
         const int _LEVELS_X_POS = 52;
 
         /// <summary>

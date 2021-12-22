@@ -5,6 +5,9 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class GameObject inherits IGameObject
+    /// </summary>
     class GameObject : IGameObject
     {
         #region Attributs
@@ -17,8 +20,13 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #endregion
 
         #region Methodes
+        /// <summary>
+        /// Update method
+        /// </summary>
         public virtual void Update() { }
-
+        /// <summary>
+        /// Start method
+        /// </summary>
         public virtual void Start() { }
         #endregion
     }

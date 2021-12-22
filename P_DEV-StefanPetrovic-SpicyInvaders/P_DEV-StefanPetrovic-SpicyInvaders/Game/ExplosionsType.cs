@@ -5,6 +5,9 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Enum for the explosion type
+    /// </summary>
     public enum ExplosionType
     {
         #region Attributs
