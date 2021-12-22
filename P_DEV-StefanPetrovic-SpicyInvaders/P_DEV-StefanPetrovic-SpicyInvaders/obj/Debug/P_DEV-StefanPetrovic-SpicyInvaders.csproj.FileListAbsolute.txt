@@ -28,3 +28,11 @@ C:\Users\stefa\OneDrive\Bureau\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPe
 C:\Users\stefa\OneDrive\Bureau\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.CoreCompileInputs.cache
 C:\Users\stefa\OneDrive\Bureau\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
 C:\Users\stefa\OneDrive\Bureau\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe.config
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\bin\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.AssemblyReference.cache
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.SuggestedBindingRedirects.cache
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.csproj.CoreCompileInputs.cache
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.exe
+C:\Users\stefa\OneDrive\Bureau\SpaceInvaders\P_DEV-StefanPetrovic-SpicyInvaders\P_DEV-StefanPetrovic-SpicyInvaders\obj\Debug\P_DEV-StefanPetrovic-SpicyInvaders.pdb
