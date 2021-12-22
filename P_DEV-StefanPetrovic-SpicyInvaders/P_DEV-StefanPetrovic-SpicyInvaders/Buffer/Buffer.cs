@@ -16,11 +16,11 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Instantiate a new double buffer
         /// </summary>
-        private static DoubleBuffer buffer2D = new DoubleBuffer(100, 59);
+        private static DoubleBuffer _buffer2D = new DoubleBuffer(100, 59);
         /// <summary>
         /// Instantiate a new default pixel
         /// </summary>
-        private static Pixel currentPixel = new Pixel();
+        private static Pixel _currentPixel = new Pixel();
         #endregion
 
         #region Propriétés des attributs
@@ -42,10 +42,10 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             for (int i = 0; i < str.Length; i++)
             {
                 // Set's the char for the current pixel
-                currentPixel.pixelChar = str[i];
+                _currentPixel.pixelChar = str[i];
 
                 // Writes that pixel to the buffer
-                buffer2D[x + i, y] = currentPixel;
+                _buffer2D[x + i, y] = _currentPixel;
             }
         }
 
@@ -61,10 +61,10 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             for (int i = 0; i < str.Length; i++)
             {
                 // Set's the char for the current pixel
-                currentPixel.pixelChar = str[i];
+                _currentPixel.pixelChar = str[i];
 
                 // Writes that pixel to the buffer
-                buffer2D.current[x + i, y] = currentPixel;
+                _buffer2D.current[x + i, y] = _currentPixel;
             }
 
             // Write to the buffer
@@ -78,7 +78,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void SetColor(ConsoleColor color)
         {
             // Set the pixel color to the `color` color
-            currentPixel.pixelColor = color;
+            _currentPixel.pixelColor = color;
         }
 
         /// <summary>
@@ -102,10 +102,10 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void DisplayRender()
         {
             // Swap buffer to write and display
-            buffer2D.Swap();
+            _buffer2D.Swap();
 
             // Display what was written to the buffer
-            buffer2D.Display();
+            _buffer2D.Display();
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         public static void ClearBuffer()
         {
             // Clear the buffer
-            buffer2D.Clear();
+            _buffer2D.Clear();
         }
         #endregion
     }

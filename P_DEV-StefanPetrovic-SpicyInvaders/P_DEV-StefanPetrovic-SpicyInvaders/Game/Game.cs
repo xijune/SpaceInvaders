@@ -22,11 +22,11 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Constant for the base delay
         /// </summary>
-        private const int _BASE_DELAY = 25;
+        private const int _BASE_DELAY = 20;
         /// <summary>
         /// Constant for the number of life at start
         /// </summary>
-        private const int _START_LIFES = 1;
+        private const int _START_LIFES = 3;
         /// <summary>
         /// Current score
         /// </summary>

@@ -241,6 +241,11 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                         }
                         // Start the game
                         _game.Loop();
+
+                        _score.UserName = _game.UserName;
+                        _score.Score = _game.Score;
+
+                        _score.WriteFile();
                     }
                     // If the option button is selected
                     else if (_optionSelected)
