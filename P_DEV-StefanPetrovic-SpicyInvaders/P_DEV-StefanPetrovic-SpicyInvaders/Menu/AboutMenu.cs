@@ -1,19 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : About menu
+
+using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class AboutMenu
+    /// </summary>
     public class AboutMenu
     {
         #region Attributs
-        // Constant of the X value to render all button
+        /// <summary>
+        /// Constant of the X value to render all button
+        /// </summary>
         private const int _X_SELECTION = 38;
-        // If the quit button is selected
+        /// <summary>
+        /// If the quit button is selected
+        /// </summary>
         private bool _exitSelected;
-        // If the option menu is selected
+        /// <summary>
+        /// If the option menu is selected
+        /// </summary>
         private bool _isAbout;
         #endregion
 

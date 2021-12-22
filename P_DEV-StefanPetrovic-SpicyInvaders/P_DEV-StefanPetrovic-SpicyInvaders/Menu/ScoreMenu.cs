@@ -1,49 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/// ETML
+/// Auteur : Stefan Petrovic
+/// Date : 11.12.2021
+/// Description : ScoreMenu
+
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class ScoreMenu
+    /// </summary>
     public class ScoreMenu
     {
         #region Attributs
-        // Constant of the X value to render all button
+        /// <summary>
+        /// Constant of the X value to render all button
+        /// </summary>
         private const int _X_SELECTION = 38;
-        // If the quit button is selected
+        /// <summary>
+        /// If the quit button is selected
+        /// </summary>
         private bool _exitSelected;
-        // If the option menu is selected
+        /// <summary>
+        /// If the option menu is selected
+        /// </summary>
         private bool _isScore;
-        // Path of the user
+        /// <summary>
+        /// Path of the user
+        /// </summary>
         //private static string _pathUser = @"%USERPROFILE%\Desktop\Score.txt";
         private static string _pathUser = @"%USERPROFILE%\OneDrive\Bureau\Score.txt";
-        // Path of the file
+        /// <summary>
+        /// Path of the file
+        /// </summary>
         private static string _pathFile = Environment.ExpandEnvironmentVariables(_pathUser);
-        // UserName of the last player
+        /// <summary>
+        /// UserName of the last player
+        /// </summary>
         private string _userName;
-        // Score of the last player
+        /// <summary>
+        /// Score of the last player
+        /// </summary>
         private int _score;
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Getter, setter on _exitSelected
+        /// </summary>
         public bool ExitSelected
         {
             get { return _exitSelected; }
             set { _exitSelected = value; }
         }
+        /// <summary>
+        /// Getter, setter on _isScore
+        /// </summary>
         public bool IsScore
         {
             get { return _isScore; }
             set { _isScore = value; }
         }
+        /// <summary>
+        /// Getter, setter on _userName
+        /// </summary>
         public string UserName
         {
             get { return _userName; }
             set { _userName = value; }
         }
+        /// <summary>
+        /// Getter, setter on _score
+        /// </summary>
         public int Score
         {
             get { return _score; }
@@ -184,7 +216,6 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         /// <summary>
         /// Write in the text file
         /// </summary>
-        /// <param name="state">Param get</param>
         public void WriteFile()
         {
             // Content of text file

@@ -5,13 +5,20 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Timer
+    /// </summary>
     class Timer
     {
         #region Attributs
-        // What limit we can count to
+        /// <summary>
+        /// What limit we can count to
+        /// </summary>
         int _limit;
 
-        // The counter
+        /// <summary>
+        /// The counter
+        /// </summary>
         int _counter;
         #endregion
 

@@ -7,10 +7,15 @@ using System.Collections.Generic;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Explosions inherits of GameObject
+    /// </summary>
     class Explosions : GameObject
     {
         #region Attributs
-        // List of explosions
+        /// <summary>
+        /// List of the explosions
+        /// </summary>
         private List<Explosion> _explosions;
         #endregion
 

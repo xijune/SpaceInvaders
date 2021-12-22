@@ -5,10 +5,15 @@
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Sprites
+    /// </summary>
     class Sprites
     {
         #region Attributs
-        // Design of the space invaders title
+        /// <summary>
+        /// Design of the space invaders title
+        /// </summary>
         public static readonly string[] titleStartString = new string[4]
         {
             "█████████████████████████████████████████████████████████████████████████████████",
@@ -16,7 +21,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "█▄▄▄▄─██─▄▄▄██─▀─██─███▀██─▄█▀████─███─█▄▀─███▄▀▄███─▀─███─██─██─▄█▀██─▄─▄█▄▄▄▄─█",
             "▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▀▀▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀"
         };
-        // Design of the option title
+        /// <summary>
+        /// Design of the option title
+        /// </summary>
         public static readonly string[] titleOptionString = new string[4]
         {
             "███████████████████████████████████",
@@ -24,7 +31,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "█─██─██─▄▄▄███─████─██─██─██─█▄▀─██",
             "▀▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀▄▄▄▀▄▄▄▄▀▄▄▄▀▀▄▄▀"
         };
-        // Design of the about title
+        /// <summary>
+        /// Design of the about title
+        /// </summary>
         public static readonly string[] titleAboutString = new string[4]
         {
             "███████████████████████████████",
@@ -32,7 +41,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "██─▀─███─▄─▀█─██─██─██─████─███",
             "▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▀▄▄▄▄▀▀▀▄▄▄▀▀"
         };
-        // Design of the about title
+        /// <summary>
+        /// Design of the score title
+        /// </summary>
         public static readonly string[] titleScoreString = new string[4]
         {
             "██████████████████████████████",
@@ -40,79 +51,105 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "█▄▄▄▄─█─███▀█─██─██─▄─▄██─▄█▀█",
             "▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀"
         };
-        // Design of the play text
+        /// <summary>
+        /// Design of the play text
+        /// </summary>
         public static readonly string[] playString = new string[2]
         {
            "█▀█ █   ▄▀▄ █▄█",
            "█▀▀ █▄▄ █▀█  █ "
         };
-        // Design of the score text
+        /// <summary>
+        /// Design of the score text
+        /// </summary>
         public static readonly string[] scoreString = new string[2]
         {
            "█▀ █▀▀ █▀█ █▀█ █▀▀",
            "▄█ █▄▄ █▄█ █▀▄ ██▄"
         };
-        // Design of the about text
+        /// <summary>
+        /// Design of the about text
+        /// </summary>
         public static readonly string[] aboutString = new string[2]
         {
            "▄▀▄ █▄▄ █▀█ █ █ ▀█▀",
            "█▀█ █▄█ █▄█ █▄█  █ "
         };
-        // Design of the option text
+        /// <summary>
+        /// Design of the option text
+        /// </summary>
         public static readonly string[] optionString = new string[2]
         {
            "█▀█ █▀█ ▀█▀ █ █▀█ █▄ █",
            "█▄█ █▀▀  █  █ █▄█ █ ▀█"
         };
-        // Design of the exit text
+        /// <summary>
+        /// Design of the exit text
+        /// </summary>
         public static readonly string[] exitString = new string[2]
         {
             "█▀▀ ▀▄▀ █ ▀█▀",
             "██▄ █ █ █  █ "
         };
-        // Design of the sound text
+        /// <summary>
+        /// Design of the sound text
+        /// </summary>
         public static readonly string[] soundString = new string[2]
         {
             "█▀ █▀█ █ █ █▄ █ █▀▄",
             "▄█ █▄█ █▄█ █ ▀█ █▄▀"
         };
-        // Design of the on text
+        /// <summary>
+        /// Design of the on text
+        /// </summary>
         public static readonly string[] onString = new string[2]
         {
             "█▀█ █▄ █",
             "█▄█ █ ▀█"
         };
-        // Design of the off text
+        /// <summary>
+        /// Design of the off text
+        /// </summary>
         public static readonly string[] offString = new string[2]
         {
             "█▀█ █▀▀ █▀▀",
             "█▄█ █▀  █▀ "
         };
-        // Design of the easy text
+        /// <summary>
+        /// Design of the easy text
+        /// </summary>
         public static readonly string[] easyString = new string[2]
         {
             "█▀▀ ▄▀▄ █▀ █▄█",
             "██▄ █▀█ ▄█  █ "
         };
-        // Design of the hard text
+        /// <summary>
+        /// Design of the hard text
+        /// </summary>
         public static readonly string[] hardString = new string[2]
         {
             "█ █ ▄▀▄ █▀█ █▀▄",
             "█▀█ █▀█ █▀▄ █▄▀"
         };
-        // Design of the difficulty text
+        /// <summary>
+        /// Design of the difficulty text
+        /// </summary>
         public static readonly string[] difficultyString = new string[2]
         {
             "█▀▄ █ █▀▀ █▀▀ █ █▀▀ █ █ █   ▀█▀ █▄█",
             "█▄▀ █ █▀  █▀  █ █▄▄ █▄█ █▄▄  █   █ "
         };
-        // Design of the game over text
+        /// <summary>
+        /// Design of the game over text
+        /// </summary>
         public static readonly string[] gameOverString = new string[2]
         {
             "█▀▀ ▄▀▄ █▀▄▀█ █▀▀   █▀█ █ █ █▀▀ █▀█",
             "█▄█ █▀█ █ ▀ █ ██▄   █▄█ ▀▄▀ ██▄ █▀▄"
         };
-        // Design of the pause text
+        /// <summary>
+        /// Design of the pause text
+        /// </summary>
         public static readonly string[] pauseString = new string[6]
         {
             "----------------------------------------------------------------------------------------------------",
@@ -122,21 +159,27 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
             "                                                                                                    ",
             "----------------------------------------------------------------------------------------------------"
         };
-        // Design of the player
+        /// <summary>
+        /// Design of the player
+        /// </summary>
         public static readonly string[] player = new string[3]
         {
             "   ▄   ",
             "  ▄█▄  ",
             " ▀█▀█▀ "
         };
-        // Design of the ennemy
+        /// <summary>
+        /// Design of the ennemy
+        /// </summary>
         public static readonly string[] enemy = new string[3]
         {
             " ▀▄ ▄▀ ",
             " █▀█▀█ ",
             " ▐▀▀▀▌ "
         };
-        // Infos of the about menu
+        /// <summary>
+        /// Infos of the about menu
+        /// </summary>
         public static readonly string[] aboutinfo = new string[14]
         {
             "╔═════════════════════════════════════════════════════════════════╗",

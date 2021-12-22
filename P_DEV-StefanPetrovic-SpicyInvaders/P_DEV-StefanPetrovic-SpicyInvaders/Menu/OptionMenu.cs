@@ -7,30 +7,54 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class OptionMenu
+    /// </summary>
     public class OptionMenu
     {
         #region Attributs
-        // Constant of the X value to render all button
+        /// <summary>
+        /// Constant of the X value to render all button
+        /// </summary>
         private const int _X_SELECTION = 38;
-        // If the quit button is selected
+        /// <summary>
+        /// If the quit button is selected
+        /// </summary>
         private bool _exitSelected;
-        // If the sound button is selected
+        /// <summary>
+        /// If the sound button is selected
+        /// </summary>
         private bool _soundSelected;
-        // If the difficulty button is selected
+        /// <summary>
+        /// If the difficulty button is selected
+        /// </summary>
         private bool _difficultySelected;
-        // If the sound is on selected
+        /// <summary>
+        /// If the sound is on selected
+        /// </summary>
         private bool _onSelected;
-        // If the sound is off selected
+        /// <summary>
+        /// If the sound is off selected
+        /// </summary>
         private bool _offSelected;
-        // If the option menu is selected
+        /// <summary>
+        /// If the option menu is selected
+        /// </summary>
         private bool _easySelected;
-        // If the option menu is selected
+        /// <summary>
+        /// If the option menu is selected
+        /// </summary>
         private bool _hardSelected;
-        // If the option menu is selected
+        /// <summary>
+        /// If the option menu is selected
+        /// </summary>
         private bool _isOption;
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Getter, setter on _exitSelected
+        /// </summary>
         public bool ExitSelected
         {
             get
@@ -42,6 +66,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _exitSelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _soundSelected
+        /// </summary>
         public bool SoundSelected
         {
             get
@@ -53,6 +80,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _soundSelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _difficultySelected
+        /// </summary>
         public bool DifficultySelected
         {
             get
@@ -64,6 +94,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _difficultySelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _isOption
+        /// </summary>
         public bool IsOption
         {
             get
@@ -75,6 +108,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _isOption = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _onSelected
+        /// </summary>
         public bool OnSelected
         {
             get
@@ -86,6 +122,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _onSelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _offSelected
+        /// </summary>
         public bool OffSelected
         {
             get
@@ -97,6 +136,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _offSelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _easySelected
+        /// </summary>
         public bool EasySelected
         {
             get
@@ -108,6 +150,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 _easySelected = value;
             }
         }
+        /// <summary>
+        /// Getter, setter on _hardSelected
+        /// </summary>
         public bool HardSelected
         {
             get

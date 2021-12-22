@@ -7,23 +7,38 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Barrier
+    /// </summary>
     class Barrier
     {
         #region Attributs
-        //
+        /// <summary>
+        /// Barrier Height
+        /// </summary>
         const int _BARRIER_HEIGHT = 4;
-        //
+        /// <summary>
+        /// Barrier Width
+        /// </summary>
         const int _BARRIER_WIDTH = 8;
-        //
+        /// <summary>
+        /// Barrier sprite
+        /// </summary>
         private string[] _sprite;
-        //
+        /// <summary>
+        /// Barrier Grid
+        /// </summary>
         private int[][] _barrierGrid;
-        // The coordinate for the ship
+        /// <summary>
+        /// The coordinate for the ship
+        /// </summary>
         private Vector _coordinates;
         #endregion
 
         #region Propriétés des attributs
-        // The coordinate for the ship
+        /// <summary>
+        /// The coordinate for the ship
+        /// </summary>
         public Vector Coordinates => _coordinates;
         #endregion
 

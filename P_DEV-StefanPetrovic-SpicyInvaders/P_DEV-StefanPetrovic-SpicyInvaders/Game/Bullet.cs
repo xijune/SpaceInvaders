@@ -7,21 +7,34 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Bullet
+    /// </summary>
     class Bullet
     {
         #region Attributs
-        // The bullet prite
+        /// <summary>
+        /// The bullet prite
+        /// </summary>
         private char _bullet;
-        // How much to move the bullet
+        /// <summary>
+        /// How much to move the bullet
+        /// </summary>
         private int _increment;
-        // The coordinate for the bullet
+        /// <summary>
+        /// The coordinate for the bullet
+        /// </summary>
         private Vector _coordinates;
         #endregion
 
         #region Propriétés des attributs
-        // The coordinate for the bullet
+        /// <summary>
+        /// The coordinate for the bullet
+        /// </summary>
         public Vector Coordinates => _coordinates;
-        // Save the move direction of the bullet
+        /// <summary>
+        /// Save the move direction of the bullet
+        /// </summary>
         public MoveType moveDirection { get; }
         #endregion
 

@@ -7,18 +7,26 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Struct Pixel
+    /// </summary>
     struct Pixel
     {
         #region Attributs
         #endregion
 
         #region Propriétés des attributs
+        /// <summary>
+        /// Getter, setter
+        /// </summary>
         public char pixelChar
         {
             get;
             set;
         }
-
+        /// <summary>
+        /// Getter, setter
+        /// </summary>
         public ConsoleColor pixelColor
         {
             get;

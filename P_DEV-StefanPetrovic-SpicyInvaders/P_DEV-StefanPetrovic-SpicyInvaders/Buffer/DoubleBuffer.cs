@@ -7,26 +7,41 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class DoubleBuffer
+    /// </summary>
     class DoubleBuffer
     {
         #region Attributs
-        //
+        /// <summary>
+        /// Current pixel
+        /// </summary>
         public Pixel[,] current;
-        //
+        /// <summary>
+        /// Next pixel
+        /// </summary>
         private Pixel[,] _next;
-        //
+        /// <summary>
+        /// Aux pixel
+        /// </summary>
         private Pixel[,] _aux;
-        //
+        /// <summary>
+        /// Current chars
+        /// </summary>
         private char[] _charsCurrent;
         #endregion
 
         #region Propriétés des attributs
-        //
+        /// <summary>
+        /// XDim
+        /// </summary>
         public int XDim => _next.GetLength(0);
-        //
+        /// <summary>
+        /// YDim
+        /// </summary>
         public int YDim => _next.GetLength(1);
         /// <summary>
-        /// 
+        /// Pixel
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
@@ -56,6 +71,9 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
         #endregion
 
         #region Methodes
+        /// <summary>
+        /// Clear method
+        /// </summary>
         public void Clear()
         {
             Array.Clear(_next, 0, XDim * YDim - 1);
@@ -73,12 +91,18 @@ namespace P_DEV_StefanPetrovic_SpicyInvaders
                 Console.WriteLine(_charsCurrent);
             }
         }
+        /// <summary>
+        /// Swap method
+        /// </summary>
         public void Swap()
         {
             _aux = current;
             current = _next;
             _next = _aux;
         }
+        /// <summary>
+        /// Display method
+        /// </summary>
         public void Display()
         {
             Console.SetCursorPosition(0, 0);

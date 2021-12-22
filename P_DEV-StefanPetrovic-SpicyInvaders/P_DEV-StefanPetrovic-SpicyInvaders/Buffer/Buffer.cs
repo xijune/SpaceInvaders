@@ -7,12 +7,19 @@ using System;
 
 namespace P_DEV_StefanPetrovic_SpicyInvaders
 {
+    /// <summary>
+    /// Class Buffer
+    /// </summary>
     class Buffer
     {
         #region Attributs
-        // Instantiate a new double buffer
+        /// <summary>
+        /// Instantiate a new double buffer
+        /// </summary>
         private static DoubleBuffer _buffer2D = new DoubleBuffer(100, 59);
-        // Instantiate a new default pixel
+        /// <summary>
+        /// Instantiate a new default pixel
+        /// </summary>
         private static Pixel _currentPixel = new Pixel();
         #endregion
 
